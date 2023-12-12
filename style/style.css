@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto-Black.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
   }
 
   @font-face {
@@ -10,8 +10,12 @@
 
 
 
-h1 {
+h1, h2, h3 {
     font-family: "Playfair Display", 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Roboto;
 }
 
 html {
