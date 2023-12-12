@@ -1,4 +1,13 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+  }
+
+  @font-face {
+    font-family: "Playfair Display";
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+  }
 h1 {
     color: aqua;
-    
+    font-family: "Playfair Display";
 }
