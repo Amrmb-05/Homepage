@@ -7,7 +7,16 @@
     font-family: "Playfair Display";
     src: url(../fonts/PlayfairDisplay-Regular.ttf);
   }
-h1 {
-    color: aqua;
-    font-family: "Playfair Display";
+body {
+    margin: 32px;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.about-me {
+  
+}
+.personal-photo {
+    width: 300px;
 }
