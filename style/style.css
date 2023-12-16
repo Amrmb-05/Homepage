@@ -41,13 +41,11 @@ body {
     padding-right: 80px;
 }
 .header {
-    position: relative;
     padding-top: 60px;
     display: flex;
     align-items: center;
-    background-color: #0891B2ff;
     padding-bottom: 48px;
-    background: linear-gradient(to 55deg , #0891B2ff 50%, white 10%);
+    background: linear-gradient(168deg ,#0891B2ff 63% , rgba(0,0,0,0.2) 63%,white 64% );
 
 }
 
@@ -56,16 +54,17 @@ body {
 /* .header::before {
     content: "";
     position: absolute;
-    background-color: rgb(30, 69, 85);
-    left: 30%;
+    background-color: rgb(128, 128, 30);
+    right: 0%;
+    top: 10%;
+    height: 35%;
     width: 100%;
-    transform: rotate(-45deg);
-    padding-bottom: 100%;
 } */
 
 .header .card {
     background-color: white;
     padding: 48px;
+    z-index: 1;
 }
 
 
