@@ -17,7 +17,7 @@ h1, h2, h3 {
 
 p {
     font-family: Roboto;
-    font-size: large;
+    font-size: larger;
 }
 
 html {
@@ -74,7 +74,19 @@ body {
     z-index: 1;
 }
 
+.img-container {
+    position: relative;
+}
 
+.img-container h2{
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    text-align: center;
+    z-index: 3;
+    font-size: xx-large;
+    left: 25%;
+}
 .card p{
     color: rgb(103, 107, 111);
 
@@ -93,7 +105,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     position: relative;
-    z-index: 999;
+    z-index: 2;
 
 }
 
@@ -168,6 +180,7 @@ h2 {
     background-color: #0891B2ff;
     color: white;
     font-family: "Playfair Display";
+    gap:10px
 }
 
 .contact {
@@ -199,10 +212,10 @@ h2 {
     color: black;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) { /* tablet */
     .cards {
         display: grid;
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .header,.projects,.footer {
@@ -216,12 +229,22 @@ h2 {
         margin-bottom: 12px;
     }
 
+    .footer .personal-photo {
+        width: 300px;
+    }
+
     .header {
         display: block;
     }
 
     .about-me {
         margin: 48px;
+    }
+
+
+    .img-container h2 {
+        /* position: static; */
+        top: 10%;
     }
 }
 
@@ -249,12 +272,16 @@ h2 {
     .header {
         display: flex;
         flex-direction: column;
+        background: linear-gradient(160deg ,#0891B2ff 33% , rgba(0,0,0,0.2) 33%,white 34% );
+
     }
 
     .header .card, .personal-photo{
         box-shadow: none;
     }
-
+    .img-container h2 {
+        top: 80%;
+    }
     h1 {
         text-align: center;
     }
