@@ -12,6 +12,7 @@
 
 h1, h2, h3 {
     font-family: "Playfair Display", 'Times New Roman', Times, serif;
+    margin-bottom: 0;
 }
 
 p {
@@ -40,21 +41,38 @@ body {
     padding-right: 80px;
 }
 .header {
+    position: relative;
     padding-top: 60px;
     display: flex;
     align-items: center;
+    background-color: #0891B2ff;
+    padding-bottom: 48px;
+    background: linear-gradient(to 55deg , #0891B2ff 50%, white 10%);
+
 }
+
+
+
+/* .header::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(30, 69, 85);
+    left: 30%;
+    width: 100%;
+    transform: rotate(-45deg);
+    padding-bottom: 100%;
+} */
 
 .header .card {
     background-color: white;
     padding: 48px;
-    height: 200px;
 }
+
 
 .card p{
     color: rgb(103, 107, 111);
 
-}
+ }
 .header-links {
     display: flex;
     justify-content: end;
@@ -65,15 +83,15 @@ body {
 
 .personal-photo {
     width: 450px;
-    /* height: 450px; */
+    /* height: 450px;  */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     position: relative;
-    z-index: 9;
+    z-index: 999;
+
 }
 
 .projects {
-    margin-top: 4rem;
     margin-bottom: 5rem;
 }
 
@@ -87,10 +105,11 @@ body {
 
 .card {
     /* Add shadows to create the "card" effect */
-    background-color: rgb(113, 11, 11);
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin-bottom: 12px;
+    padding-bottom: 48px;
+
 }
 
 
@@ -130,6 +149,7 @@ h2 {
     padding: 24px;
     height: 150px;
     color: white;
+    background-color: rgb(113, 11, 11);
    
 }
 
@@ -141,7 +161,7 @@ h2 {
     /* padding: 12px; */
     background-color: #0891B2ff;
     color: white;
-    
+    font-family: "Playfair Display";
 }
 
 .contact {
@@ -158,6 +178,9 @@ h2 {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
+.footer .personal-photo {
+    width: 550px;
+}
 .phone-number, .email {
     display: flex;
     gap: 16px;
@@ -168,4 +191,71 @@ h2 {
     gap: 2rem;
     font-size: 2.5rem;
     color: black;
+}
+
+@media (max-width: 1000px) {
+    .cards {
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header,.projects,.footer {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+/* 
+    .personal-photo {
+        width: 250px;
+        position: relative;
+        left:10px;
+        top: 20px;
+    } */
+
+}
+
+@media (max-width: 480px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 64px;
+    }
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+    }
+    
+    .header,.projects,.contact {
+        padding-top: 48px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .card, .personal-photo{
+        box-shadow: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .header .personal-photo {
+        width: 350px;
+        margin-bottom: 24px;
+    }
+
+    .footer .personal-photo {
+        width: 100vw;
+    }
+    .header-links, .footer-links {
+        justify-content: center;
+    }
 }
