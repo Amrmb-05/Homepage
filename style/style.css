@@ -131,11 +131,7 @@ header .card {
     padding-bottom: 48px;
 }
 
-.project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 /* On mouse-over, add a deeper shadow */
@@ -170,11 +166,18 @@ h2 {
     background-color: white;
 }
 
+.container h2 {
+    font-size: 1.2em;
+}
 .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 24px;
     height: 150px;
     color: white;
     background-color: rgb(113, 11, 11);
+    font-size: x-large;
    
 }
 
