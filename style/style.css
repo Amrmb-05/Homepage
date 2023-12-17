@@ -36,11 +36,11 @@ body {
     flex-direction: column;
 }
 
-.header,.projects,.footer {
+header,.projects,footer {
     padding-left: 80px;
     padding-right: 80px;
 }
-.header {
+header {
     padding-top: 60px;
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@ body {
 
 }
 
-.header .personal-photo {
+header .personal-photo {
     float: left;
 }
 
@@ -68,7 +68,7 @@ body {
     width: 100%;
 } */
 
-.header .card {
+header .card {
     background-color: white;
     padding: 48px;
     z-index: 1;
@@ -113,8 +113,10 @@ body {
     margin-bottom: 5rem;
 }
 
+.projects h1 {
+    margin-bottom: 12px;
+}
 .cards {
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 48px;
@@ -171,7 +173,7 @@ h2 {
    
 }
 
-.footer {
+footer {
     display: flex;
     justify-content: space-between;
     padding-top: 48px;
@@ -188,7 +190,7 @@ h2 {
     flex-direction: column;
     gap: 24px;
 }
-.footer p {
+footer p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -197,7 +199,7 @@ h2 {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
-.footer .personal-photo {
+footer .personal-photo {
     width: 550px;
 }
 .phone-number, .email {
@@ -218,22 +220,22 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .header,.projects,.footer {
+    header,.projects,footer {
         padding-left: 48px;
         padding-right: 48px;
     }
  
-    .header .personal-photo {
+    header .personal-photo {
         width: 300px;
         margin-right: 12px;
         margin-bottom: 12px;
     }
 
-    .footer .personal-photo {
+    footer .personal-photo {
         width: 300px;
     }
 
-    .header {
+    header {
         display: block;
     }
 
@@ -256,28 +258,36 @@ h2 {
     }
 
 
-    .footer {
+    footer {
         display: flex;
         flex-direction: column;
         gap: 16px;
         padding: 0;
     }
     
-    .header,.projects,.contact {
+    header,.projects,.contact {
         padding-top: 48px;
-        padding-left: 48px;
-        padding-right: 48px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
-    .header {
+    header {
         display: flex;
         flex-direction: column;
         background: linear-gradient(160deg ,#0891B2ff 33% , rgba(0,0,0,0.2) 33%,white 34% );
-
+        padding-bottom: 0;
+       
     }
-
-    .header .card, .personal-photo{
+    .about-me {
+        margin: 0;
+    }
+    .img-container {
+        padding-left: 12px;
+    }
+    header .card, .personal-photo{
         box-shadow: none;
+        padding-left: 0;
+        padding-right: 0;
     }
     .img-container h2 {
         top: 80%;
@@ -286,12 +296,12 @@ h2 {
         text-align: center;
     }
 
-    .header .personal-photo {
+    header .personal-photo {
         width: 350px;
         margin-bottom: 24px;
     }
 
-    .footer .personal-photo {
+    footer .personal-photo {
         width: 100vw;
     }
     .header-links, .footer-links {
