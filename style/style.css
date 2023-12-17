@@ -229,6 +229,7 @@ footer .personal-photo {
         width: 300px;
         margin-right: 12px;
         margin-bottom: 12px;
+        float: left;
     }
 
     footer .personal-photo {
